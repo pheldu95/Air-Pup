@@ -29,5 +29,37 @@
         "bio": "Treats and Snoozin!",
         "image": "pancake.png",
         "breed": "Bulldog"
+    },
+    {
+        "name": "Steve",
+        "breed": "steve",
+        "weight": "111",
+        "bio": "",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "aa",
+        "breed": "aa",
+        "weight": "22",
+        "bio": "",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "asdasd",
+        "breed": "asd",
+        "weight": "2",
+        "bio": "",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "ss",
+        "breed": "ss",
+        "weight": "222",
+        "bio": "",
+        "age": "",
+        "image": ""
     }
 ]
