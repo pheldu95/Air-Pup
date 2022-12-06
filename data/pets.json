@@ -61,5 +61,13 @@
         "bio": "",
         "age": "",
         "image": ""
+    },
+    {
+        "name": "steve",
+        "breed": "Big dog ",
+        "weight": "200",
+        "bio": "",
+        "age": "",
+        "image": ""
     }
 ]
