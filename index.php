@@ -1,6 +1,10 @@
 <?php
+    $pdo = new PDO('mysql:dbname=air_pup;host=localhost', 'root', null);
+    $result = $pdo->query('SELECT * FROM pet');
+    $pets = $result->fetchAll();
+
     require 'lib/functions.php';
-    $pets = get_pets();
+    //$pets = get_pets();
    
 
     $pets = array_reverse($pets);
