@@ -1,8 +1,24 @@
 <?php
-function get_pets()
+//adding $limit = null means that if there is no $limit argument passed, then it is just set to null
+function get_pets($limit = null)
 {
-    $petsJson = file_get_contents('data/pets.json');
-    $pets = json_decode($petsJson, true);
+    //common way to do configuration
+    $config = require 'config.php';
+
+    $pdo = new PDO(
+        $config['database_dsn'],
+        $config['database_user'],
+        $config['database_pass']
+    );
+
+    //so our contact page can still get all pets, no matter what, if null is passed as the limit
+    $query = 'SELECT * FROM pet';
+    if($limit){
+        $query = $query.' LIMIT '.$limit;
+    }
+    $result = $pdo->query($query);
+    $pets = $result->fetchAll();
+
     return $pets;
 }
 
